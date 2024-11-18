@@ -95,15 +95,29 @@ print("\n")
 
 print("***PROBLEM 3.0 : FITNESS APP")
 // You want your fitness tracking app to give as much encouragement as possible to your users. Create a variable steps equal to the number of steps you guess you've taken today (already done for you). Create a constant stepGoal equal to 10,000 (already done for you). Write an if-else statement that will print "You're almost halfway there!" if steps is less than half of stepGoal, and will print "You're over halfway there!" if steps is greater than half of stepGoal.
-var steps = 400
-let stepGoal = 10000
-
-
+var steps = 400.0
+let stepGoal = 10000.0
+if (steps < stepGoal / 2 ) {
+    print("You're almost halfway there!")
+}
+else{
+    print("You're over halfway there!")
+}
 print("\n")
 print("***PROBLEM 3.1 : FITNESS APP")
 // Now create a new, but similar, if-else-if statement that prints "Way to get a good start today!" if steps is less than a tenth of stepGoal, prints "You're almost halfway there!" if steps is less than half of stepGoal, and prints "You're over halfway there!" if steps is greater than half of stepGoal.
-
-
+if (steps < stepGoal * 0.10 ) {
+    print("way to get a good start today")
+}
+else if
+    (steps < stepGoal / 2) {
+    print("You're almost halfway there!")
+}
+else {
+    print("You're over halfway there!")
+}
+    
+    
 
 //Once you complete the coding, test "steps" with various numbers to see if all the coding works. Then continue.
 
