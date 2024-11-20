@@ -143,16 +143,22 @@ else {
     print("Sorry, we'll have to think of somewhere else.")
 }
 
-
-    
-
-
 print("\n")
 print("***PROBLEM 3.3 : COMBINING ALL LOGIC")
 // Imagine you're trying to decide whether or not to go on a walk. You decide that you'll go on a walk if it's not raining or if it's 82 degress or warmer and sunny out. Create a constant isNiceWeather that is equal to an expression that evaluates to a boolean indicating whether or not the weather is nice enough for you to go for a walk. Write an if statement that will print "I'm going for a walk!" if the weather is nice.
 //HINT: Declare two true Booleans - isRaining & isSunny. Then declare a variable - temp - that has the value of 90.Then declare the constant isNiceWeather which is given the value of the correct parameters of the previous three variables.
 //Double HINT: The conditional parens should begin with NOT isRaining.
 
+var isRaning = true
+var isSunny = true
+var temp = 90
+let isNiceWeather = (!isRaning && temp > 82 && isSunny)
+if (isNiceWeather){
+    print("Im going for a walk!")
+}
+else{
+    print("Im staying home and watching TV!")
+}
 
 
 //Once you complete the coding, test and run the code with various boolean conditions in the variables to see if all the coding works. Change true into false, use different degrees, etc. Then continue.
